@@ -12,8 +12,11 @@
 
 /* Jumbotron styles */
 .jumbotron {
-  background-color: #BFD7D9;
-  height: 710px;
+    background-image: linear-gradient(white, orange);
+    height: 100vh;
+  }
+.container-fluid img {
+width: 100%;
 }
 .info {
   padding-left: 5%;
@@ -25,14 +28,14 @@ p.lead {
   font-size: 22px;
 }
 .info p {
-  font-size: 20px;
+  font-size: 22px;
   word-wrap: break-word;
   padding-left: 0%;
   margin: 0%;
 }
-.info h1 {
+.display-4 h1 {
+  font-size: 40px !important;
   width: 80%;
-  word-wrap: break-word;
   padding-left: 0%;
   padding-right: 10px;
   margin: 0%;
@@ -40,7 +43,7 @@ p.lead {
 .pic img {
   display: flex;
   justify-items: flex-end;
-  width: 65%;
+  width: 60%;
   padding: 10px;
   margin-right: 10%;
   margin-left: 15%;
@@ -49,87 +52,13 @@ p.lead {
 }
 
 /* Card styles */
-.cardContainer {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-.card {
-  margin: 0 auto;
-}
-.btn-primary {
-  background-color: #BFD7D9;
-  border-color: #BFD7D9;
-  color: black;
-  margin-top: 12px;
-  margin-bottom: 5px;
-}
-.card-body h5 {
-  font-size: 22px;
-}
+
 
 /* About Me styles */ 
-.container2 {
-  background-color: #FFE6E6;
-  margin-top: 40px;
-}
-.about {
-  padding: 3%;
-  height: 100%;
-}
-.about h1 {
-  font-size: 30px;
-  margin-left: 3%;
-  padding-top: 3%;
-    }
-.about p {
-  padding-top: 3%;
-  padding-bottom: 3%;
-  padding-right: 2%;
-  padding-left: 0%;
-  margin-right: 1%;
-  margin-left: 3%;
-  font-size: 20px;
-  }
-.me img {
-  display: flex;
-  justify-items: flex-end;
-  height: auto;
-  width: 100%;
-}
-.me {
-  padding: 0px;
-}
+
 
 /* Skills styles */
-.container3 {
-  background-color: #BFD7D9;
-  height: 320px;
-}
-.container3 h1 {
-  padding-top: 55px;
-  padding-bottom: 10px;
-  padding-right: 2%;
-  padding-left: 2%;
-  font-size: 35px;
-  margin-left: 5%;
-}
-.container3 li {
-  padding: .75%;
-  font-size: 18px;
-  margin-left: 5%;
-}
 
-/* Contact Me styles */
-.contact {
-  margin: 50px auto;
-  padding: 25px;
-  border-radius: 7px;
-  text-align: center;
-}
-.contact h2 {
-  font-size: 32px;
-  text-align: center;
-}
 
 /* Footer styles */
 .footer {
