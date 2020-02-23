@@ -13,29 +13,20 @@
 /* Jumbotron styles */
 .jumbotron {
     background-image: linear-gradient(white, orange);
-    height: 100vh;
+    height: 710px;
   }
-.container-fluid img {
+/*.container-fluid img {
 width: 100%;
-}
-.info {
-  padding-left: 5%;
-  padding-right: 5%;
-}
-p.lead {
-  padding-top: 4px;
-  padding-bottom: 5px;
-  font-size: 22px;
-}
+}*/
 .info p {
-  font-size: 22px;
+  font-size: 20px;
   word-wrap: break-word;
   padding-left: 0%;
   margin: 0%;
 }
-.h1 {
-  font-size: 40px !important;
-  width: 80%;
+h1 {
+  font-size: 40px;
+  width: 100%;
   padding-left: 0%;
   padding-right: 10px;
   margin: 0%;
@@ -43,12 +34,15 @@ p.lead {
 .pic img {
   display: flex;
   justify-items: flex-end;
-  width: 60%;
-  padding: 10px;
+  width: 300px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 0px;
+  padding-bottom: 20px;
   margin-right: 10%;
-  margin-left: 15%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Resaerch styles */
@@ -81,6 +75,71 @@ p.lead {
   padding-left: 35px;
 } 
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .jumbotron {
+    background-image: linear-gradient(white, orange);
+    height: 740px;
+    padding-top: 30px;
+  }
+  h1 {
+    font-size: 33px;
+    width: 100%;
+    padding: 0%;
+    margin-bottom: 20px;
+  }
+  .info p {
+    font-size: 19px;
+    line-height: 27px;
+    word-wrap: break-word;
+    padding-bottom: 15px;
+    margin: 5px;
+  }
+  .pic img {
+    display: flex;
+    justify-items: center;
+    width: 200px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin-right: 2%;
+    margin-left: 17%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* For mobile phones: */
+ .col-sm img {
+width: 50%;
+display: inline-block;
+column-count: 2;
+  }
+  }
+
+@media only screen and (min-width: 1200px) {
+  /* For desktop phones: */
+  .info h1{
+    align-self: center;
+    padding-left: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .pic img {
+    display: flex;
+    justify-items: center;
+    width: 310px;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
 
 /*To-do 
 resume

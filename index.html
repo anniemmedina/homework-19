@@ -10,6 +10,25 @@
     <link rel="stylesheet" href="css/index.css">
     <title>Annie M. Medina</title>
 
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 20px;
+      }
+      
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      </style>
+
   </head>
 
   <body>
@@ -83,11 +102,11 @@
 <div class="jumbotron">
   <div class="container-fluid">
     <div class="row">
-      <div class="info col-sm-12 col-md-7 col-lg-6 col-xl-6">
-       <h1 class="h1">Redesigning Mental Health Access</h1>
-       <p class="lead">People often do not know where to turn during a mental health or substance abuse crisis. The U.S. government has many free or low-cost services to offer but the majority of the public are not aware of the help that is available or where to find it.</p>
-      </div>
-       <div class="pic col-sm-10 col-md-5 col-lg-6 col-xl-6"><img src="images/samhsa-float1.png">
+       <div class="pic col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <h1>Redesigning Mental Health Access</h1>
+        <p>People often do not know where to turn during a mental health or substance abuse crisis. The U.S. government has many free or low-cost services to offer but the majority of the public are not aware of the help that is available or where to find it.</p>
+       </div>
+       <div class="pic col-sm-6 col-md-6 col-lg-6 col-xl-6"><img src="images/samhsa-float1.png">
        </div>
    </div>
   </div>
@@ -99,7 +118,8 @@
   <div class="row">
     <div class="col-sm">
       <h4>Design Challange</h4>
-      <p class="details">Studies show that nearly half of the adult population in the United States will experience a mental illness during their lifetime. But only 41 percent of those individuals who had a mental disorder in the past year received professional health care or other services. (-Mental Health First Aid, USA)</p>
+      <p class="details">Even with the growing awareness about substance abuse and mental health disorders in our society, most individuals turn to technology for discrete answers on these highly stigmatized topics. More government funding has been put into mental health related programs as of late but the majority of the public are not aware of the help that is available or where to find it online or in their communities. 
+      </p>
     </div>
     <div class="col-sm">
       <h4>My Role</h4>
@@ -123,28 +143,28 @@
 <div class="container">
   <h1>Research</h1>
   <h3>Competitive Analysis</h3>
-      <p class="details">An assessment of existing mental health and substance use disoder apps and platforms. </p>
+      <p class="details">An assessment of existing mental health and substance use disorder apps and platforms. </p>
   <div class="row">
     <div class="col align-self-start">
       <figure class="figure">
         <img src="images/nami.png" class="figure-img img-fluid rounded" alt="...">
-        <figcaption class="figure-caption">NAMI a grass-roots non-profit focused on community engagement for mental health.</figcaption>
+        <figcaption class="figure-caption">National Alliance on Mental Health: a grass-roots non-profit focused on community engagement for mental health.</figcaption>
       </figure>
     </div>
     <div class="col align-self-center">
       <figure class="figure">
         <img src="images/psych.png" class="figure-img img-fluid rounded" alt="...">
-        <figcaption class="figure-caption">Psychology Today a mental health services search engine of sorts.</figcaption>
+        <figcaption class="figure-caption">Psychology Today: a mental health services search engine of sorts.</figcaption>
       </figure>
     </div>
     <div class="col align-self-end">
       <figure class="figure">
         <img src="images/very-well.png" class="figure-img img-fluid rounded" alt="...">
-        <figcaption class="figure-caption">Verywellmind a mental health and self-care app.</figcaption>
+        <figcaption class="figure-caption">Verywellmind: a mental health and self-care app.</figcaption>
       </figure>
     </div>
   </div>
-  <p class="details">Existing mental health apps use varying styles of UI creating atmospheres that range from blog-like to clinical. While these apps offer some clear calls to action they lack one-stop-shop relability.</p>
+  <p class="details">Existing mental health sites use varying styles of UI creating atmospheres that range from blog-like to clinical. While these apps offer some clear calls to action they lack one-stop-shop offerings and carry disclaimers regarding relability. </p>
 </div>
 
 <!-- User Interview Key Findings -->
@@ -154,15 +174,28 @@
   <div class="row">
     <div class="col-sm">
       <h4>Why refocus?</h4> 
-      <p class="details">Users struggled to navigate to resources for family members and individuals in need of resources for starting a conversation.</p>
+      <p class="details">Studies show that nearly half of the adult population in the United States will experience a mental illness during their lifetime. But only 41 percent of those individuals who had a mental disorder in the past year received professional health care or other services. (-Mental Health First Aid, USA)
+      </p>
     </div>
     <div class="col-sm">
       <h4>Clarity</h4> 
-      <p class="details">Small paragraph description.</p>
+      <p class="details">
+      Users struggled to navigate to resources for family members and individuals in need of resources for starting a conversation.
+        <ul>      
+          <li>Redundant links
+          </li>
+          <li>Uninviting "clinical" feel
+          </li>
+          <li>Heavy on text walls
+          </li>
+          <li>Hard to find specific information
+          </li>
+        </ul>
+        </p>
     </div>
     <div class="col-sm">
       <h4>Miscommunication</h4> 
-      <p class="details">Small paragraph description.</p>
+      <p class="details">The site mixes content for clinicians with content for new users seeking personal resources. Clinical jargon is overwhelming to new users on the topic of mental health. Text walls meant for families and individuals are lenghty paired with long videos that many will not be willing to watch in an emergency. There is a definite need for better accessabity to practical help and information.</p>
     </div>
   </div>
 </div>
@@ -170,7 +203,6 @@
 <!-- Proto & User Persona -->
 <div class="container">
   <h3>Proto & User Personas</h3>
-
   <div class="row justify-content-start">
     <div class="col-5">
       <img src="images/PROTO PERSONA.png" class="figure-img img-fluid rounded" alt="...">
@@ -184,36 +216,38 @@
 <!-- Solution-->
 <div class="container">
   <h1>Solution</h1>
-  <p class="details">More information paragraph description of the solution. More information paragraph description of the solution. More information paragraph description of the solution. More information paragraph description of the solution. More information paragraph description of the solution. </p>
-  <p class="details">More information paragraph description of the solution. More information paragraph description of the solution. More information paragraph description of the solution. </p>
+  <p class="details">To make information on Substance Use Disorders and other Mental Illness more accessible to the community by restructuring the flow and focus of the website for the US National Substance Abuse & Mental Health Services Administration SAMHSA. </p>
   <div class="row">
     <div class="col-sm">
       <h4>Solution 1</h4>
-      <p class="details">Small paragraph description.</p>
+      <p class="details">Originally the site had 9 categories in the Navigation Bar. When reorganizing the site map we reduced this to 6 categories. Through the process of card sorting we were able to edit out redundancies on the site. </p>
     </div>
     <div class="col-sm">
       <h4>Solution 2</h4>
-      <p class="details">Small paragraph description.</p>
+      <p class="details"> We decided to alter our seperation of information based on calls to actions for our primary users: Individuals with behavioral Health Issues, their Families/loved ones. Information that is specific to Practitioners has been sectioned off to it’s own page. </p>
     </div>
     <div class="col-sm">
       <h4>Solution 3</h4>
-      <ul>      
-        <li>Google forms
-        </li>
-        <li>Adobe XD
-        </li>
-        <li>Photoshop</li>
-        <li>Trello</li>
-      </ul>
+      <p class="details">We reorganised our cards and renamed many of the primary site pages.Wording has been changed to layman's terms for better accessibility for newcomers to the site.</p> 
     </div>
   </div>
 </div>
 
 <div class="container">
   <h4>User Flows</h4>
-  <p class="details">More information paragraph description of the solution. More information paragraph description of the solution. More information paragraph description of the solution. More information paragraph description of the solution. More information paragraph description of the solution. </p>
-  <p class="details">More information paragraph description of the solution. More information paragraph description of the solution. More information paragraph description of the solution. </p>
-  <div class="container"></div>  <div class="row">
+  <p class="details">In out testing there was no target user. Due to the prevalence of Substance Use Disorders and Mental Health Disorders; most people know someone who has been affected. We want to support any person seeking assistance on how to deal with a loved one who has a substance abuse or mental health problem. <br> Our three main user objectives when utilizing the app: </p>
+  <div class="col-sm">
+    <ul>      
+      <li>Find treatment services or locations.
+      </li>
+      <li>Look for articles or media on how to support a loved one.
+      </li>
+      <li>Call for immediate support.</li>
+    </ul>
+  </div>
+  <div class="container">
+  </div>  
+  <div class="row">
     <div class="col-sm">
       <p class="details">
         <img src="images/user-flow.png" class="figure-img img-fluid rounded" alt="...">
@@ -223,69 +257,77 @@
 
 <!-- Wireframes & Iteration -->
 <div class="container">
-  <h1>Wireframes & Iteration</h1>
+  <h1>Wireframes & Iterations</h1>
   <h4>Wireframes</h4>
-  <p class="details">Planning and designing...</p>
-  <div class="row">
-    <div class="col-sm">
-      <p class="details">
-        <img src="images/wire1.png" class="figure-img img-fluid rounded" alt="...">
-      </p>
-    </div>
-    <div class="col-sm">
-      <p class="details"><img src="images/wire2.png" class="figure-img img-fluid rounded" alt="..."></p>
-    </div>
-    <div class="col-sm">
-      <p class="details"><img src="images/wire3.png" class="figure-img img-fluid rounded" alt="..."></p>
-    </div>
-    <div class="col-sm">
-      <p class="details">
-        <img src="images/wire4.png" class="figure-img img-fluid rounded" alt="...">
-      </p>
-    </div>
-    <div class="col-sm">
-      <p class="details">
-        <img src="images/wire5.png" class="figure-img img-fluid rounded" alt="...">
-      </p>
-    </div>
+  <p class="details">In planning and designing our wireframes, the order of hierarchy is based on information that is most pertinent to the user (family, individual and practitioner). Categories are based on most frequently occuring topics, consolidated according to specific user (out of the 3 aforementioned).</p>
+<div class="row">
+  <div class="column">
+    <img src="images/wire1.png" alt="Snow" style="width:90%">
+  </div>
+  <div class="column">
+    <img src="images/wire2.jpg" alt="Forest" style="width:90%">
+  </div>
+  <div class="column">
+    <img src="images/wire3.png" alt="Mountains" style="width:90%">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="images/wire4.png" alt="Snow" style="width:90%">
+  </div>
+  <div class="column">
+    <img src="images/wire5.png" alt="Forest" style="width:90%">
+  </div>
+  <div class="column">
+    <img src="images/wire6.png" alt="Mountains" style="width:90%">
+  </div>
+</div>
   </div>
 </div>
 
 <!-- Iteration -->
 <div class="container">
   <h4>Iterations</h4>
-  <p class="details">Planning and designing...</p>
+  <p class="details">In response to user testing feedback we made the following changes: 
+    <div class="col-sm">
+      <ul>      
+        <li>When clicked, the Hamburger menu takes over the page and provides a drop down of main categories of the site. 
+        </li>
+        <li>Languages provide drop down of selections.
+        </li>
+        <li>When pressed, buttons become a darker hue and text gets a drop shadow or changes from regular to medium. </li>
+      </ul>
+    </div>
+  </p>
   <div class="row">
-    <div class="col-sm">
-      <p class="details">
-        <img src="images/wire-home.jpg" class="figure-img img-fluid rounded" alt="...">
-      </p>
+    <div class="column">
+      <img src="images/wire-home.jpg" alt="Snow" style="width:90%">
     </div>
-    <div class="col-sm">
-      <p class="details"><img src="images/help-map.jpg" class="figure-img img-fluid rounded" alt="..."></p>
+    <div class="column">
+      <img src="images/menu-drop.png" alt="Forest" style="width:90%">
     </div>
-    <div class="col-sm">
-      <p class="details"><img src="images/find-help.jpg" class="figure-img img-fluid rounded" alt="..."></p>
-    </div>
-    <div class="col-sm">
-      <p class="details">
-        <img src="images/learn-more.jpg" class="figure-img img-fluid rounded" alt="...">
-      </p>
-    </div>
-    <div class="col-sm">
-      <p class="details">
-        <img src="images/wire-footer.png" class="figure-img img-fluid rounded" alt="...">
-      </p>
+    <div class="column">
+      <img src="images/help-map.jpg" alt="Mountains" style="width:90%">
     </div>
   </div>
-  <p class="details">Planning and designing paragraph.</p>
-</div>
+  <div class="row">
+    <div class="column">
+      <img src="images/find-help.jpg" alt="Snow" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="images/learn-more.jpg" alt="Forest" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="images/wire-footer.png" alt="Mountains" style="width:90%">
+    </div>
+  </div>
+  </div>
 
 <!-- Custom Design System -->
 <div class="container">
   <h1>Deliverables</h1>
   <h4>Custom Design System</h4>
-  <p class="details">Planning and designing...</p>
+  <p class="details">The existing site’s pallet consists of dark navy blues, greys and bright reds resulting in an generic, clinical feel. We switched to a more soothing tones; freshwater blue/greens and lemon yellows. The result is a more welcoming atmosphere with yellows as highlights of cleanliness and positivity, combined with a touch of seafoam green and deep sea blue for calming stability.</p>
   <div class="row">
     <div class="col-sm">
       <img src="images/Style-Tile-Template.jpg" class="figure-img img-fluid rounded" alt="...">
@@ -296,67 +338,50 @@
 <!-- Custom Design System -->
 <div class="container">
   <h4>Final Screens</h4>
+  <p class="details">Planning and designing paragraph.</p>
   <div class="row">
-    <div class="col-sm">
-      <p class="details">
-        <img src="images/final1.jpg" class="figure-img img-fluid rounded" alt="...">
-      </p>
+    <div class="column">
+      <img src="images/final1.jpg" alt="Snow" style="width:90%">
     </div>
-    <div class="col-sm">
-      <p class="details">
-        <img src="images/final2.jpg" class="figure-img img-fluid rounded" alt="...">
-      </p>
+    <div class="column">
+      <img src="images/final2.jpg" alt="Forest" style="width:90%">
     </div>
-    <div class="col-sm">
-      <p class="details">
-        <img src="images/final3.jpg" class="figure-img img-fluid rounded" alt="...">
-      </p>
+    <div class="column">
+      <img src="images/final3.jpg" alt="Mountains" style="width:90%">
     </div>
-    <div class="col-sm">
-      <p class="details">
-        <img src="images/final4.jpg" class="figure-img img-fluid rounded" alt="...">
-      </p>
-    </div>
-  </div>
-
-  <div class="container">
     <div class="row">
-      <div class="col-sm">
-        <p class="details">
-          <img src="images/final5.jpg" class="figure-img img-fluid rounded" alt="...">
-        </p>
+      <div class="column">
+        <img src="images/final4.jpg" alt="Snow" style="width:90%">
       </div>
-       <div class="col-sm">
-        <p class="details">
-          <img src="images/final6.jpg" class="figure-img img-fluid rounded" alt="...">
-        </p>
+      <div class="column">
+        <img src="images/final5.jpg" alt="Forest" style="width:90%">
       </div>
-      <div class="col-sm">
-        <p class="details">
-          <img src="images/final7.jpg" class="figure-img img-fluid rounded" alt="...">
-        </p>
+      <div class="column">
+        <img src="images/final6.jpg" alt="Mountains" style="width:90%">
       </div>
-      <div class="col-sm">
-        <p class="details">
-          <img src="images/final8.jpg" class="figure-img img-fluid rounded" alt="...">
-        </p>
-      </div>
-      <div class="col-sm">
-        <p class="details">
-          <img src="images/final9.jpg" class="figure-img img-fluid rounded" alt="...">
-        </p>
-      </div>
+      <div class="row">
+        <div class="column">
+          <img src="images/final7.jpg" alt="Snow" style="width:90%">
+        </div>
+        <div class="column">
+          <img src="images/final8.jpg" alt="Forest" style="width:90%">
+        </div>
+        <div class="column">
+          <img src="images/final9.jpg" alt="Mountains" style="width:90%">
+        </div>
     </div>
-  <div class="Prototype">Add XD Prototype here
-    <a href="#" class="">
-      <img src="">
+  <div class="Prototype">
+    <a href="https://xd.adobe.com/view/687a8141-e3dd-4298-59ad-852929616af6-1e4b/" class="">
+      <img src="">Adobe XD Prototype Link 
   </a>
 </div>
 </div>
 
+
 <!-- Final Opportunities -->
 <div class="container">
   <h1>Future Opportunities</h1>
+  <p class="details">Planning and designing paragraph.</p>
   <div class="row">
     <div class="col-sm">
       <h4>User Experience</h4>
