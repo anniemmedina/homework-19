@@ -45,9 +45,37 @@ h1 {
   margin-bottom: 0;
 }
 
-/* Resaerch styles */
-
-
+/* Container Content Syles */
+.container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.container h1 {
+  font-weight: bold;
+  color: orange;
+  font-size: 48px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.container h2 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.container h4 {
+  color: orange;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.container p {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.col-sm li {
+  font-size: 20px;
+}
 /* styles */ 
 
 
